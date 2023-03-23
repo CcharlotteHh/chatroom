@@ -1,5 +1,4 @@
-$notblack: purple;
-
-body{
-    background-color: aquamarine;
-}
+@import "base/_reset";
+@import "components/_header";
+@import "components/_footer";
+@import "components/joinContainer";
