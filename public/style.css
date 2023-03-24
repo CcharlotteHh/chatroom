@@ -97,12 +97,22 @@ footer {
 }
 .join-container .join-main {
   height: 70%;
+  width: 100%;
   background: gray;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   flex-shrink: 0;
   flex-grow: 0;
+}
+@media (max-width: 700px) {
+  .join-container .join-main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    flex-grow: 0;
+  }
 }
 .join-container .join-main form {
   display: flex;
@@ -113,8 +123,14 @@ footer {
   flex-shrink: 0;
   flex-grow: 0;
   width: 50%;
-  height: 100%;
-  font: 1.5rem;
+  height: 20%;
+  font-size: 1.5rem;
+}
+@media (max-width: 700px) {
+  .join-container .join-main form {
+    height: 20%;
+    width: 100%;
+  }
 }
 .join-container .join-main .jointext {
   display: flex;
@@ -128,6 +144,16 @@ footer {
   height: 100%;
   font-size: 2.5rem;
   text-align: start;
+}
+@media (max-width: 700px) {
+  .join-container .join-main .jointext {
+    height: 20%;
+    width: 100%;
+    font-size: 1.25rem;
+  }
+}
+.join-container .join-main .jointext h3 {
+  width: 80%;
 }
 
 .chat-container {
@@ -179,7 +205,7 @@ footer {
 }
 .chat-container .chat-main .chat-message-container {
   width: 75%;
-  background-color: aqua;
+  background-color: lightgrey;
 }
 .chat-container .chat-main .chat-message-container .message {
   background-color: #f2f2f2;
