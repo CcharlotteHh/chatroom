@@ -1,6 +1,18 @@
 .chat-container {
   width: 100%;
   height: 100%;
+  .chat-header{
+    color:white;
+    @include flexbox($justifyContent:space-around, $alignItems:center);
+#leave-btn{
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: blue;
+}
+  
+    
+  }
   .chat-main {
     height: 70%;
     background: gray;
