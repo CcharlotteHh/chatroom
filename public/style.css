@@ -83,6 +83,12 @@ footer {
   height: 17%;
   width: 100%;
   background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
 .join-container {
@@ -162,6 +168,15 @@ footer {
   flex-shrink: 0;
   flex-grow: 0;
 }
+.chat-container .chat-main .chat-sidebar h2 {
+  width: 100%;
+}
+.chat-container .chat-main .chat-sidebar h3 {
+  width: 100%;
+}
+.chat-container .chat-main .chat-sidebar .users {
+  width: 100%;
+}
 .chat-container .chat-main .chat-message-container {
   width: 75%;
   background-color: aqua;
@@ -172,4 +187,37 @@ footer {
   margin: 10px;
   padding: 10px;
   max-width: 70%;
+}
+.chat-container form#chat-form {
+  margin-left: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.chat-container form#chat-form .input-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 30px;
+  margin: 0 10px;
+  padding: 5px;
+  width: 70%;
+}
+.chat-container form#chat-form .input-container input#msg {
+  flex: 1;
+  border: none;
+  padding: 5px;
+  font-size: 16px;
+  background-color: transparent;
+}
+.chat-container form#chat-form .input-container button.btn {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
 }

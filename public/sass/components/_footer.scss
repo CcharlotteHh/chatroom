@@ -2,4 +2,5 @@ footer{
     height: 17%;
     width: 100%;
     background-color: black;
+    @include flexbox($alignItems:center);
 }

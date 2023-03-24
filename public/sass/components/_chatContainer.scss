@@ -21,6 +21,17 @@
     .chat-sidebar {
       width: 25%;
       @include flexbox($alignItems: center, $direction: column);
+    h2{
+        width: 100%;
+
+    }
+    h3{
+        width: 100%;
+    }
+    .users{
+        width: 100%;
+    }
+
     }
 
    .chat-message-container{
@@ -37,5 +48,35 @@
         
     }
    }
+  }
+  form#chat-form {
+    margin-left: 25% ;
+    @include flexbox($justifyContent:flex-start,$alignItems:center);
+
+    .input-container {
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      border-radius: 30px;
+      margin: 0 10px;
+      padding: 5px;
+      width: 70%;
+
+      input#msg {
+        flex: 1;
+        border: none;
+        padding: 5px;
+        font-size: 16px;
+        background-color: transparent;
+      }
+
+      button.btn {
+        border: none;
+        background-color: transparent;
+        font-size: 16px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    }
   }
 }
