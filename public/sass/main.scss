@@ -1,4 +1,7 @@
+@import "abstracts/_mixins";
+@import "abstracts/_variables";
 @import "base/_reset";
 @import "components/_header";
 @import "components/_footer";
-@import "components/joinContainer";
+@import "components/_joinContainer";
+@import "components/_chatContainer"

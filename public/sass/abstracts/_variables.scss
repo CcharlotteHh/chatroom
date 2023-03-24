@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Slab:wght@300&display=swap');
+// fonts
+$primaryFontFamily: 'Roboto Slab', serif;
+
+// colors
+$blue: #b2a8df;
+$lavander: #ccacdc;
+$lilac: #e2acd4;
+$pink: #fedae0;
+$mint:#d8f3db;
+$textColor:white; 
+$darkblue: #0d1732;
+$blue: #0b2153;
+$purple: #483261;
+$almostpurple: #943b71;
+$pink: #d35d8f;
+$white: white;
+$navbarRepsonsiveBg:#0b2153;
+
+//cardbackground
+
+$cardGradient: no-repeat center center fixed
+linear-gradient(to top, $darkblue, $blue, $purple, $almostpurple);
+
+// font size 
+$primaryFontSize:3rem;
+$secondaryFontSize:2rem;
+$cardPFontSize:16px;
+$abouth2FontSize: 3.5rem;
+$abouth5FontSize: 1.5rem;
+$cardH2Size:1.5rem;
+
+//vh
+$vh100 :100vh;
+$vh50 :50vh;
+
+//about img
+$aboutImgHeight:60%;
+$aboutImgWidth:40%;
+
+//typingslider
+$slider-name: typing-slider;
+$slides: 2;
+$typing-duration: 3s;
+$tab-letters: 9 4;
+$slider-font-size: 10rem;
+$slider-font-size-responsive: 5rem;
+$background: gray;
+$small: 700px;
