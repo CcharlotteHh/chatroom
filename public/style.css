@@ -132,6 +132,34 @@ footer {
     width: 100%;
   }
 }
+.join-container .join-main form .inputContainer {
+  width: 50%;
+  margin: 150px auto 50px auto;
+  border-radius: 40px;
+}
+.join-container .join-main form .inputContainer input {
+  padding-left: 20px;
+  width: 330px;
+  height: 40px;
+  padding: 10px 5px;
+  float: left;
+  border: 0;
+  background: #fff;
+  border-radius: 40px;
+  border-top-style: none;
+}
+.join-container .join-main form .inputContainer button {
+  overflow: visible;
+  position: relative;
+  float: right;
+  right: 10%;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  height: 40px;
+  width: 110px;
+  border-radius: 40px;
+}
 .join-container .join-main .jointext {
   display: flex;
   flex-direction: row;

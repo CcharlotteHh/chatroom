@@ -1,42 +1,76 @@
-.join-container{
-    width: 100%;
-    height: 100%;
-.join-main{
+.join-container {
+  width: 100%;
+  height: 100%;
+  .join-main {
     height: 70%;
     width: 100%;
-    background:gray;
+    background: gray;
     @include flexbox;
-    @include md{
-        @include flexbox ($direction:column);
+    @include md {
+      @include flexbox($direction: column);
     }
 
-    form{
-        @include flexbox($justifyContent: center, $alignItems: center,$direction:column);
-        width: 50%;
+    form {
+      @include flexbox(
+        $justifyContent: center,
+        $alignItems: center,
+        $direction: column
+      );
+      width: 50%;
+      height: 20%;
+      font-size: 1.5rem;
+      @include md {
         height: 20%;
-        font-size: 1.5rem;
-        @include md{
-            height: 20%;
-            width: 100%;  
-        }
-    
-
-    }
-    .jointext{
-        @include flexbox($justifyContent: center, $alignItems: center);
+        width: 100%;
+      }
+      .inputContainer {
         width: 50%;
-        height: 100%;
-        font-size: 2.5rem;
-        text-align: start;
-        
-        @include md{
-            height: 20%;
-            width: 100%;  
-            font-size: 1.25rem;
+        margin: 150px auto 50px auto;
+        border-radius: 40px;
+       
+
+        input {
+          padding-left: 20px;
+          width: 330px;
+          height: 40px;
+          padding: 10px 5px;
+          float: left;
+          border: 0;
+          background: #fff;
+          border-radius: 40px;
+          border-top-style: none;
         }
-        h3{
-            width: 80%;
+
+        button {
+          overflow: visible;
+          position: relative;
+          float: right;
+          right:10%;
+          border: 0;
+          padding: 0;
+          cursor: pointer;
+          height: 40px;
+          width: 110px;
+
+          border-radius: 40px;
         }
+      }
     }
-}  
+    .jointext {
+      @include flexbox($justifyContent: center, $alignItems: center);
+      width: 50%;
+      height: 100%;
+      font-size: 2.5rem;
+      text-align: start;
+
+      @include md {
+        height: 20%;
+        width: 100%;
+        font-size: 1.25rem;
+      }
+      h3 {
+        width: 80%;
+      }
+    }
+  }
 }
