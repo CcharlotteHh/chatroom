@@ -282,7 +282,6 @@ footer {
   border-radius: 30px;
   margin: 0 10px;
   padding: 5px;
-  width: 70%;
 }
 .chat-container form#chat-form .input-container input#msg {
   flex: 1;
