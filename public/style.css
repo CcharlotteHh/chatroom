@@ -95,6 +95,18 @@ footer {
   width: 100%;
   height: 100%;
 }
+.join-container header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.join-container header h1 {
+  color: white;
+  font-size: 3rem;
+}
 .join-container .join-main {
   height: 70%;
   width: 100%;
@@ -123,7 +135,7 @@ footer {
   flex-shrink: 0;
   flex-grow: 0;
   width: 50%;
-  height: 20%;
+  height: 100%;
   font-size: 1.5rem;
 }
 @media (max-width: 700px) {
@@ -133,32 +145,35 @@ footer {
   }
 }
 .join-container .join-main form .inputContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  flex-grow: 0;
+  position: relative;
   width: 50%;
-  margin: 150px auto 50px auto;
-  border-radius: 40px;
 }
 .join-container .join-main form .inputContainer input {
-  padding-left: 20px;
-  width: 330px;
-  height: 40px;
-  padding: 10px 5px;
-  float: left;
-  border: 0;
-  background: #fff;
-  border-radius: 40px;
-  border-top-style: none;
+  padding: 10px;
+  position: relative;
+  width: 70%;
+  border-radius: 50px;
 }
 .join-container .join-main form .inputContainer button {
-  overflow: visible;
-  position: relative;
-  float: right;
-  right: 10%;
-  border: 0;
-  padding: 0;
-  cursor: pointer;
-  height: 40px;
-  width: 110px;
-  border-radius: 40px;
+  padding: 10px;
+  position: absolute;
+  width: 30%;
+  border-radius: 50px;
+  right: 5%;
+}
+.join-container .join-main form .form-control select {
+  margin-top: 3%;
+  border-radius: 50px;
+  padding: 5px;
+}
+.join-container .join-main form .form-control select option {
+  border-radius: 50px;
 }
 .join-container .join-main .jointext {
   display: flex;
@@ -175,7 +190,7 @@ footer {
 }
 @media (max-width: 700px) {
   .join-container .join-main .jointext {
-    height: 20%;
+    height: 80%;
     width: 100%;
     font-size: 1.25rem;
   }
@@ -222,14 +237,22 @@ footer {
   flex-shrink: 0;
   flex-grow: 0;
 }
-.chat-container .chat-main .chat-sidebar h2 {
-  width: 100%;
+.chat-container .chat-main .chat-sidebar .roomName {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  width: 70%;
 }
-.chat-container .chat-main .chat-sidebar h3 {
-  width: 100%;
+.chat-container .chat-main .chat-sidebar .userNames {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  width: 70%;
 }
-.chat-container .chat-main .chat-sidebar .users {
-  width: 100%;
+.chat-container .chat-main .chat-sidebar h2, .chat-container .chat-main .chat-sidebar h3, .chat-container .chat-main .chat-sidebar #users {
+  text-align: center;
 }
 .chat-container .chat-main .chat-message-container {
   width: 75%;
@@ -269,8 +292,9 @@ footer {
   background-color: transparent;
 }
 .chat-container form#chat-form .input-container button.btn {
+  padding-left: 4%;
   border: none;
-  background-color: transparent;
+  border-radius: 50px;
   font-size: 16px;
   margin-left: 10px;
   cursor: pointer;

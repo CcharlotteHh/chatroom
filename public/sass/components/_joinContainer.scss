@@ -1,4 +1,11 @@
 .join-container {
+    header{
+        @include flexbox($alignItems:center);
+        h1{
+            color: white;
+            font-size: 3rem;
+        }
+    }
   width: 100%;
   height: 100%;
   .join-main {
@@ -9,50 +16,53 @@
     @include md {
       @include flexbox($direction: column);
     }
-
+.formContainer{
+  
+}
     form {
+
       @include flexbox(
-        $justifyContent: center,
+        $justifyContent:center,
         $alignItems: center,
         $direction: column
       );
       width: 50%;
-      height: 20%;
+      height: 100%;
       font-size: 1.5rem;
       @include md {
         height: 20%;
         width: 100%;
       }
-      .inputContainer {
+      .inputContainer{
+        @include flexbox($justifyContent:center);
+
+position: relative;
         width: 50%;
-        margin: 150px auto 50px auto;
-        border-radius: 40px;
-       
-
-        input {
-          padding-left: 20px;
-          width: 330px;
-          height: 40px;
-          padding: 10px 5px;
-          float: left;
-          border: 0;
-          background: #fff;
-          border-radius: 40px;
-          border-top-style: none;
-        }
-
-        button {
-          overflow: visible;
+        
+        input{
+          padding: 10px;
           position: relative;
-          float: right;
-          right:10%;
-          border: 0;
-          padding: 0;
-          cursor: pointer;
-          height: 40px;
-          width: 110px;
+          width: 70%;
+          border-radius: 50px;
 
-          border-radius: 40px;
+        }
+        button{
+          padding: 10px;
+          position: absolute;
+          width: 30%;
+          border-radius: 50px;
+          right: 5%;
+        }
+      }
+      .form-control{
+        select{
+        margin-top:3%;
+          border-radius: 50px;
+          padding:5px;
+
+          option{
+            border-radius: 50px;
+          }
         }
       }
     }
@@ -64,7 +74,7 @@
       text-align: start;
 
       @include md {
-        height: 20%;
+        height: 80%;
         width: 100%;
         font-size: 1.25rem;
       }

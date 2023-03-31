@@ -21,16 +21,27 @@
     .chat-sidebar {
       width: 25%;
       @include flexbox($alignItems: center, $direction: column);
-    h2{
-        width: 100%;
+      .roomName{
+        background-color: #f2f2f2;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        width: 70%;
 
     }
-    h3{
-        width: 100%;
+    .userNames{
+      background-color: #f2f2f2;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        width: 70%;
+
     }
-    .users{
-        width: 100%;
+    h2, h3, #users{
+      text-align: center;
     }
+   
+   
 
     }
 
@@ -71,8 +82,9 @@
       }
 
       button.btn {
+        padding-left:4%;
         border: none;
-        background-color: transparent;
+       border-radius: 50px;
         font-size: 16px;
         margin-left: 10px;
         cursor: pointer;
