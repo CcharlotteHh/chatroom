@@ -2,13 +2,42 @@
   width: 100%;
   height: 100%;
   .chat-header{
+    width: 100%;
     color:white;
     @include flexbox($justifyContent:space-around, $alignItems:center);
+    h1{
+      font-size: 2rem;
+    }
+    .hamburger{
+      display: none;
+
+      @include md{
+        background-color: transparent;
+        @include flexbox ($direction:column, $alignItems:center,$justifyContent:space-between);
+        width: 10%;
+        height: 40%;
+      }
+      .icon-bar{
+
+        width: 100%;
+        height: 20%;
+        background-color: white;
+        @include flexbox ($direction:column, $alignItems:center);
+      }
+    }
+    .btnsChat{
+      @include md{
+        display: none;
+      }
+    
 #leave-btn{
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
     background-color: blue;
+    width: 33%;
+
+}
 }
   
     
@@ -21,6 +50,9 @@
     .chat-sidebar {
       width: 25%;
       @include flexbox($alignItems: center, $direction: column);
+      @include md {
+        display: none;
+      }
       .roomName{
         background-color: #f2f2f2;
         border-radius: 10px;
@@ -48,6 +80,9 @@
    .chat-message-container{
     width: 75%;
     background-color: lightgrey;
+    @include md {
+      width: 100%;
+    }
 
     .message{
         background-color: #f2f2f2;
