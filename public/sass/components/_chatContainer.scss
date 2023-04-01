@@ -4,10 +4,41 @@
   .chat-header{
     background-color: black;
     color:white;
+    h1{
+      font-size: 2rem;
+    }
    .navbar{
-    min-height: 70px;
+    height: 100%;
     @include flexbox ($justifyContent:space-between, $alignItems:center);
+    @include md{
+      
+    }
     padding: 0 24px;
+    .btnsChat{
+      @include flexbox($justifyContent:space-between,$alignItems:center);
+      @include md {
+     display: none;
+
+
+      }
+      }
+      .hamburger{
+        cursor: pointer;
+        background-color:transparent;
+        display: none;
+        @include md{
+          display: block;
+        }
+
+        .icon-bar{
+          background-color: white;
+          display: block;
+          width: 35px;
+          height: 5px;
+          margin: 7px auto;
+
+        }
+      }
 
 
    }

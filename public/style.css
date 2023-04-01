@@ -207,8 +207,11 @@ footer {
   background-color: black;
   color: white;
 }
+.chat-container .chat-header h1 {
+  font-size: 2rem;
+}
 .chat-container .chat-header .navbar {
-  min-height: 70px;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -217,6 +220,37 @@ footer {
   flex-shrink: 0;
   flex-grow: 0;
   padding: 0 24px;
+}
+.chat-container .chat-header .navbar .btnsChat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+@media (max-width: 700px) {
+  .chat-container .chat-header .navbar .btnsChat {
+    display: none;
+  }
+}
+.chat-container .chat-header .navbar .hamburger {
+  cursor: pointer;
+  background-color: transparent;
+  display: none;
+}
+@media (max-width: 700px) {
+  .chat-container .chat-header .navbar .hamburger {
+    display: block;
+  }
+}
+.chat-container .chat-header .navbar .hamburger .icon-bar {
+  background-color: white;
+  display: block;
+  width: 35px;
+  height: 5px;
+  margin: 7px auto;
 }
 .chat-container #leave-btn {
   border-radius: 10px;
